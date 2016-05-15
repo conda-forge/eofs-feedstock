@@ -5,7 +5,7 @@ Home: https://ajdawson.github.com/eofs
 
 Package license: GPL-3.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: EOF analysis in Python
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/eofs-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/eofs-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/eofs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/eofs-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/eofs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/eofs-feedstock/branch/master)
