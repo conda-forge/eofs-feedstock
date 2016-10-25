@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
     name: eofs
@@ -7,7 +7,7 @@ package:
 source:
     fn: v{{ version }}.tar.gz
     url: https://github.com/ajdawson/eofs/archive/v{{ version }}.tar.gz
-    md5: 52fce9f666d540069c90a6c109fcb3b4
+    md5: df2bcc84e2339b18ba08d3a763f0d90e
 
 build:
     number: 0
