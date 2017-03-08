@@ -11,6 +11,18 @@ Summary: EOF analysis in Python
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/eofs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/eofs-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/eofs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/eofs-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/eofs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/eofs-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eofs/badges/version.svg)](https://anaconda.org/conda-forge/eofs)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eofs/badges/downloads.svg)](https://anaconda.org/conda-forge/eofs)
+
 Installing eofs
 ===============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `eofs` available on your platform 
 ```
 conda search eofs --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/eofs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/eofs-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/eofs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/eofs-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/eofs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/eofs-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eofs/badges/version.svg)](https://anaconda.org/conda-forge/eofs)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/eofs/badges/downloads.svg)](https://anaconda.org/conda-forge/eofs)
 
 
 Updating eofs-feedstock
