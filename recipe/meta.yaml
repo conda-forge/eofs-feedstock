@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.3.0" %}
 
 package:
     name: eofs
@@ -7,7 +7,7 @@ package:
 source:
     fn: v{{ version }}.tar.gz
     url: https://github.com/ajdawson/eofs/archive/v{{ version }}.tar.gz
-    md5: df2bcc84e2339b18ba08d3a763f0d90e
+    md5: 42279c4dd8c384ae4d6a3745787daabb
 
 build:
     number: 0
@@ -23,13 +23,16 @@ requirements:
 
 test:
     requires:
-        - nose
+        - pytest
+        - pycodestyle
     imports:
         - eofs
         - eofs.examples
         - eofs.multivariate
         - eofs.tests
         - eofs.tools
+    commands:
+        - pytest --pyargs eofs
 
 about:
     home: https://ajdawson.github.com/eofs
