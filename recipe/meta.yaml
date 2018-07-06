@@ -1,46 +1,46 @@
 {% set version = "1.3.0" %}
 
 package:
-    name: eofs
-    version: {{ version }}
+  name: eofs
+  version: {{ version }}
 
 source:
-    fn: v{{ version }}.tar.gz
-    url: https://github.com/ajdawson/eofs/archive/v{{ version }}.tar.gz
-    md5: 42279c4dd8c384ae4d6a3745787daabb
+  url: https://pypi.io/packages/source/e/eofs/eofs-{{ version }}.tar.gz
+  sha256: 13e80d9543b467ac7361b69c3559f3fb1c000dcadfe5e2b7e512798b858dceea
 
 build:
+  number: 1
   noarch: python
-    number: 1
-    script: python -m pip install --no-deps --ignore-installed .
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numpy
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
 
 test:
-    requires:
-        - pytest
-        - pycodestyle
-    imports:
-        - eofs
-        - eofs.examples
-        - eofs.multivariate
-        - eofs.tests
-        - eofs.tools
-    commands:
-        - pytest --pyargs eofs
+  requires:
+    - pytest
+    - pycodestyle
+  imports:
+    - eofs
+    - eofs.examples
+    - eofs.multivariate
+    - eofs.tests
+    - eofs.tools
+  commands:
+    - pytest --pyargs eofs
 
 about:
-    home: https://ajdawson.github.com/eofs
-    license: GPL-3.0
-    summary: EOF analysis in Python
+  home: https://ajdawson.github.com/eofs
+  license: GPL-3.0
+  license_file: COPYING
+  summary: EOF analysis in Python
 
 extra:
-    recipe-maintainers:
-        - ajdawson
-        - ocefpaf
+  recipe-maintainers:
+    - ajdawson
+    - ocefpaf
