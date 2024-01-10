@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eofs-feedstock/
 
 Home: https://ajdawson.github.com/eofs
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Summary: EOF analysis in Python
 
