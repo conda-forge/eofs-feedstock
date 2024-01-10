@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: eofs
@@ -6,15 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/e/eofs/eofs-{{ version }}.tar.gz
-  sha256: 5ae9afc159b8cfb2be476d257fc469b2cdd473c76f5411c508010007a5ae6bd2
+  sha256: 7b5ce336f06d76f79c29e8615fe551de5f1dcc35203dd4745281cc9468e548df
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
