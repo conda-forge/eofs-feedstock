@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://ajdawson.github.com/eofs
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_file: COPYING
   summary: EOF analysis in Python
 
