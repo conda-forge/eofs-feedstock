@@ -9,16 +9,16 @@ source:
   sha256: 7b5ce336f06d76f79c29e8615fe551de5f1dcc35203dd4745281cc9468e548df
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - numpy
 
 test:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://ajdawson.github.com/eofs
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_file: COPYING
   summary: EOF analysis in Python
 
