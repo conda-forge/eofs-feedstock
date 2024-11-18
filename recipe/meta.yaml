@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/eofs/eofs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/eofs/eofs-{{ version }}.tar.gz
   sha256: 4afecba7dd8076399803b71570d96a12dce237615c6317685f83a206fe70ee57
 
 build:
@@ -15,16 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
 
 test:
   requires:
+    - python {{ python_min }}
     - pytest
-    - pycodestyle
   imports:
     - eofs
     - eofs.examples
