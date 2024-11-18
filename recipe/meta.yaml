@@ -1,30 +1,31 @@
-{% set version = "1.4.1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: eofs
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/e/eofs/eofs-{{ version }}.tar.gz
-  sha256: 7b5ce336f06d76f79c29e8615fe551de5f1dcc35203dd4745281cc9468e548df
+  url: https://pypi.org/packages/source/e/eofs/eofs-{{ version }}.tar.gz
+  sha256: 4afecba7dd8076399803b71570d96a12dce237615c6317685f83a206fe70ee57
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
 
 test:
   requires:
+    - python {{ python_min }}
     - pytest
-    - pycodestyle
   imports:
     - eofs
     - eofs.examples
